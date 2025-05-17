@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+package-lock.json
+.env
+
+# Ignore the app.zip file
+app/app.zip
+
+# Logs
+*.log
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
