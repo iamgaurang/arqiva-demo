@@ -31,6 +31,10 @@ resource "azurerm_linux_web_app" "app" {
 
   depends_on = [azurerm_app_configuration.appconfig]
 
+  app_settings = {
+    AZURE_APPCONFIG_ENDPOINT = azurerm_app_configuration.appconfig.endpoint
+  }
+
   lifecycle {
     prevent_destroy = true
     ignore_changes = [identity, site_config]
