@@ -29,8 +29,8 @@ app.get('/', async (req, res) => {
       res.send(`<h1>Error: saved_string not found in App Configuration.</h1>`);
     }
   } catch (error) {
-    console.error("❌ Error fetching configuration setting:", error.message);
-    res.status(500).send(`<h1>Error: Unable to fetch the saved string.</h1><p>${error.message}</p>`);
+    console.error("❌ Error fetching configuration setting:");
+    res.status(500).send(`<h1>Error: Unable to fetch the saved string.</h1>`);
   }
 });
 
