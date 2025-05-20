@@ -3,7 +3,7 @@
 // Configure the Azure provider
 provider "azurerm" {
   features {}
-  subscription_id = "2224565f-a725-4e9d-8de0-6ab4d548f8f4"
+  subscription_id = "<Azure subscription id>"
 }
 
 // Create a Resource Group
@@ -24,7 +24,7 @@ resource "azurerm_linux_web_app" "app" {
 
   site_config {
     application_stack {
-      node_version = "18-lts"
+      node_version = "22-lts"
     }
     always_on = false
   }
